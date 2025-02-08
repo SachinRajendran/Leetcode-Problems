@@ -3,7 +3,7 @@ class Solution
     public int addDigits(int num)
     {
       int dig = 0,ans = 0;
-      while(num>10)
+      while(num>=10)
       {
        int res=0;
       while(num>0)
