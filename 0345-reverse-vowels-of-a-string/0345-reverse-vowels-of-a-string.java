@@ -14,7 +14,7 @@ class Solution
        char temp = '0';
        while(left<right)
        {
-         if(list.contains(ch[left]) == list.contains(ch[right]))
+         if(list.contains(ch[left]) && list.contains(ch[right]))
          {
             temp = ch[left];
             ch[left] = ch[right];
@@ -24,7 +24,7 @@ class Solution
          else if(!list.contains(ch[left]))
          left++;
          else
-         right++;
+         right--;
        }
        for(int i = 0; i < s.length(); i++)
        res += ch[i];
